@@ -33,3 +33,19 @@ header {
 main .city i {
     font-size: 24px;
 }
+
+/* SECTION EXPLORER */
+
+.explorer {
+    text-align: center;
+}
+
+.explorer h2 {
+    margin-top: 32px;
+    font-size: 32px;
+}
+
+.explorer p {
+    font-size: 16px;
+}
+
