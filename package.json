@@ -4,7 +4,7 @@
   "description": "Projet P3 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch style.scss style.css"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
   "homepage": "https://github.com/JoannaGk/ohmyfood#readme",
   "devDependencies": {
     "sass": "^1.54.5"
+  },
+  "dependencies": {
+    "postcss": "^8.4.16",
+    "react": "^18.2.0"
   }
 }
