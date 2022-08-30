@@ -1,0 +1,33 @@
+@mixin gradient {
+    background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+
+@mixin base-shadow {
+    box-shadow: 0px 1px 7px -1px #000000;
+}
+
+@mixin zoom {
+    transform: scale(1.05);
+    transition: transform 100ms;
+    opacity: 0.9;
+}
+
+@mixin heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 400; 
+    content: "\f004";
+    font-size: 32px;
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: inherit;
+    background-clip: text;
+    opacity: 1;
+    transition:all 200ms;
+}

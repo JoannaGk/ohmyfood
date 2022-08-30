@@ -1,5 +1,4 @@
-@use "../utils/box-shadow.scss";
-@use "../utils/zoom.scss";
+@use "../utils/mixins";
 
 
 .fonctionnement {
@@ -39,9 +38,9 @@
         padding: 24px 32px;
         flex-grow: 1;
         border-radius: 16px;
-        @include box-shadow.base-shadow;
+        @include mixins.base-shadow;
         &:hover {
-            @include zoom.zoom;
+            @include mixins.zoom;
         }
         & i {
             margin-right: 16px;
