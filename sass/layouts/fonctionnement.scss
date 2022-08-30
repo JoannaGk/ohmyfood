@@ -4,6 +4,10 @@
 
 .fonctionnement {
     counter-reset: steps;
+    h2 {
+        margin-bottom: 36px;
+    }
+
     & ol {
         display: flex;
         gap: 32px;
@@ -12,6 +16,7 @@
         }
         list-style-type: none;
     }
+
     & li {
         position: relative;
         &::before{
@@ -27,6 +32,8 @@
             border-radius: 50%;
             position: absolute;
             left: -16px;
+            top: 50%;
+            transform: translateY(-50%);
         }
         background-color: #f6f6f6;
         padding: 24px 32px;
@@ -42,4 +49,5 @@
             font-size: 24px;
         }
     }
+
 }
