@@ -8,10 +8,16 @@
 }
 
 .menu_main {
-    padding: 0 16px;
+    padding: 16px;
+    background-color: #f6f6f6;
     h2 {
         position: relative;
         font-family: 'Shrikhand', 'sans-serif';
+        margin-top: -40px;
+        background-color: #f6f6f6;
+        width: 99vmax;
+        padding: 32px 16px;
+        border-radius: 16px 16px 0 0;
         &::before {
             @include mixins.heart;
         }
@@ -25,5 +31,24 @@
         &:hover::after {
             opacity: 1;
         }
+    }
+    .menu_grid {
+        background-color: #f6f6f6;
+        padding: inherit;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    .menu_category {
+        padding: inherit;
+        background-color: #f6f6f6;
+    }
+    .food_item {
+        background-color: white;
+        padding: inherit;
+        border-radius: 16px;
     }
 } 
