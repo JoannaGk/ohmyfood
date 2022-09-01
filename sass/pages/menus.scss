@@ -6,6 +6,17 @@
 body {
     background-color: #f6f6f6;
 }
+
+header::before {
+    @include mixins.font-awesome;
+    content:"\f177";
+    font-weight: 900;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
 .banner img {
     width: 100%;
     max-height: 90vh;
@@ -71,6 +82,7 @@ body {
         border-radius: 16px;
         display: flex;
         overflow: hidden;
+        cursor: pointer;
         @include mixins.base-shadow;
     }
         .food_item__description {
