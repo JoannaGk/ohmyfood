@@ -48,8 +48,25 @@ body {
     }
     .menu_category {
         padding: inherit;
+        & h3 {
+            padding: 16px;
+            margin-bottom: 32px;
+            font-weight: 400;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                top: 45px;
+                left: 16px;
+                height: 4px;
+                width: 45px;
+                background-color: #99e2d0;
+
+            }
+        }
     }
     .food_item {
+        margin-bottom: 16px;
         background-color: white;
         border-radius: 16px;
         display: flex;
@@ -98,4 +115,12 @@ body {
                 animation: quarter-spin 0.5s ease-in-out;
             }
         } 
+    .order {
+        height: 40vh;
+        display: grid;
+        place-items: center;
+        button {
+            @include mixins.base-button;
+        }
+    }
     }

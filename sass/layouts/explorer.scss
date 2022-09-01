@@ -13,21 +13,6 @@
     }
 
     & button {
-        color: white;
-        font-weight: bold;
-        font-size: 24px;
-        font-family: Roboto;
-        padding: 16px 32px;
-        border-radius: 50px;
-        border: none;
-        transition: transform 100ms;
-        margin-top: 24px;
-        @include mixins.base-shadow;
-        @include mixins.gradient;
-    }
-
-    & button:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
+        @include mixins.base-button;
     }
 }

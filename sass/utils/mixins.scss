@@ -3,7 +3,7 @@
 }
 
 @mixin base-shadow {
-    box-shadow: 0px 1px 7px -1px #000000;
+    box-shadow: 0px 1px 7px -1px #ccc8c8;
 }
 
 @mixin zoom {
@@ -30,4 +30,23 @@
     background-clip: text;
     opacity: 1;
     transition:all 200ms;
+}
+
+@mixin base-button {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Roboto;
+    padding: 16px 32px;
+    border-radius: 50px;
+    border: none;
+    transition: transform 100ms;
+    margin-top: 24px;
+    cursor: pointer;
+    @include base-shadow;
+    @include gradient;
+    &:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+    }
 }

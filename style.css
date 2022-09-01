@@ -75,7 +75,8 @@ header {
   border: none;
   transition: transform 100ms;
   margin-top: 24px;
-  box-shadow: 0px 1px 7px -1px #000000;
+  cursor: pointer;
+  box-shadow: 0px 1px 7px -1px #ccc8c8;
   background-image: linear-gradient(to top, #9356DC, #FF79DA);
 }
 .explorer button:hover {
@@ -105,7 +106,7 @@ header {
   padding: 24px 32px;
   flex-grow: 1;
   border-radius: 16px;
-  box-shadow: 0px 1px 7px -1px #000000;
+  box-shadow: 0px 1px 7px -1px #ccc8c8;
 }
 .fonctionnement li::before {
   content: counter(steps);
@@ -265,6 +266,9 @@ footer h2 {
 footer p {
   padding: 8px 0px;
 }
+footer i {
+  margin-right: 16px;
+}
 
 body {
   background-color: #f6f6f6;
@@ -348,12 +352,28 @@ body {
 .menu_main .menu_category {
   padding: inherit;
 }
+.menu_main .menu_category h3 {
+  padding: 16px;
+  margin-bottom: 32px;
+  font-weight: 400;
+  position: relative;
+}
+.menu_main .menu_category h3::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 16px;
+  height: 4px;
+  width: 45px;
+  background-color: #99e2d0;
+}
 .menu_main .food_item {
+  margin-bottom: 16px;
   background-color: white;
   border-radius: 16px;
   display: flex;
   overflow: hidden;
-  box-shadow: 0px 1px 7px -1px #000000;
+  box-shadow: 0px 1px 7px -1px #ccc8c8;
 }
 .menu_main .food_item__description {
   padding: 16px;
@@ -401,6 +421,29 @@ body {
   100% {
     transform: rotate(0deg);
   }
+}
+.menu_main .order {
+  height: 40vh;
+  display: grid;
+  place-items: center;
+}
+.menu_main .order button {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Roboto;
+  padding: 16px 32px;
+  border-radius: 50px;
+  border: none;
+  transition: transform 100ms;
+  margin-top: 24px;
+  cursor: pointer;
+  box-shadow: 0px 1px 7px -1px #ccc8c8;
+  background-image: linear-gradient(to top, #9356DC, #FF79DA);
+}
+.menu_main .order button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
 
 /*# sourceMappingURL=style.css.map */
