@@ -149,7 +149,7 @@ header {
   transform: translateY(-50%);
 }
 .fonctionnement li:hover {
-  transform: none scale(1.02);
+  transform: scale(1.02);
   transition: transform 100ms;
   opacity: 0.9;
 }
@@ -490,7 +490,7 @@ body {
   place-items: center;
   background: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 32px;
   border-radius: 50%;
 }
