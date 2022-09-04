@@ -6,8 +6,8 @@
     box-shadow: 0px 1px 7px -1px #ccc8c8;
 }
 
-@mixin zoom {
-    transform: scale(1.05);
+@mixin zoom ($zoom-level: 1.02, $transformation: none) {
+    transform: $transformation scale($zoom-level);
     transition: transform 100ms;
     opacity: 0.9;
 }
