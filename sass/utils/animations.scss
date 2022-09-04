@@ -19,3 +19,9 @@
         opacity: 1;
     }
 }
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}

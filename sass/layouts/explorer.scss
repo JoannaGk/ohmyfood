@@ -18,21 +18,27 @@
 }
 
 .loader {
+    $animation_duration: 3s;
     position: fixed;
     height: 100vh;
     inset: 0;
     z-index: 1;
     background-color: #ffffff;
     opacity: 0.9;
-    animation: disappear 1s;
-    animation-fill-mode: forwards;
+    animation: disappear 200ms $animation_duration forwards;
+    transform-origin: top;
+    display: grid;
+    place-items: center;
+    i {
+        animation: spin $animation_duration infinite linear;
+    }
 }
 
 @keyframes disappear {
-    0% {
+    from {
         transform: scale(1);
     }
-    100% {
+    to {
         transform: scale(0);
     }
 }
