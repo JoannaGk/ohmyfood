@@ -1,11 +1,12 @@
 @use "./../utils/mixins";
+@use "./../utils/variables";
 
 .explorer {
     text-align: center;
+    margin: 32px;
     
     & h2 {
-        margin-top: 32px;
-        font-size: 32px;
+        font-size: 24px;
     }
 
     & p {
@@ -14,6 +15,7 @@
 
     & button {
         @include mixins.base-button;
+        font-size: 16px;
     }
 }
 
