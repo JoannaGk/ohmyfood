@@ -4,7 +4,8 @@
   "description": "Projet P3 Openclassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass/style.scss dist/styles/style.css"
+    "sass": "sass --watch sass/style.scss dist/styles/style.css",
+    "prefix": "postcss ./dist/styles/style.css --use autoprefixer -d ./dist/styles/prefixed/prefix.css"
   },
   "repository": {
     "type": "git",
@@ -12,15 +13,18 @@
   },
   "author": "Joanna Gruchociak",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/JoannaGk/ohmyfood/issues"
   },
   "homepage": "https://github.com/JoannaGk/ohmyfood#readme",
   "devDependencies": {
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
     "sass": "^1.54.5"
   },
   "dependencies": {
-    "postcss": "^8.4.16",
+    "autoprefixer": "^10.4.8",
     "react": "^18.2.0"
   }
 }
