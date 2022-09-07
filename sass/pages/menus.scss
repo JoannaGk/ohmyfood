@@ -60,6 +60,7 @@ body {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 16px;
+
             @media (max-width: 992px) {
                 grid-template-columns: 1fr;
             }
@@ -83,6 +84,7 @@ body {
                 }
             }
                 .food_item {
+                    min-width: 0;
                     animation: appear 1s;
                     animation-fill-mode: both;
                     @for $i from 1 through 3 {
@@ -110,10 +112,17 @@ body {
                 }
                     .food_item__description {
                         padding: 16px;
-                        overflow: hidden;
                         .food_item__title {
                             margin: 0;
                         }
+                        p,
+                        .overflow-ellipsis {
+                            width: 200px;
+                            padding: 2px 5px;
+                            white-space: nowrap;
+                            overflow:hidden;
+                            text-overflow: ellipsis;
+                          }
                     }
                     .food_item__price {
                         margin-left: auto;
