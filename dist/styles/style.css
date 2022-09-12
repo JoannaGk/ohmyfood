@@ -153,7 +153,7 @@ header {
   transform: translateY(-50%);
 }
 .fonctionnement li:hover {
-  transform: none scale(1.02);
+  transform: translateY(-50%) scale(1.02);
   transition: transform 100ms;
   opacity: 0.9;
 }
@@ -209,16 +209,16 @@ header {
   background-size: cover;
 }
 .restaurants .cards_image-1 {
-  background-image: url(../../assets/menu_1.jpg);
+  background-image: url(./../../../assets/menu_1.jpg);
 }
 .restaurants .cards_image-2 {
-  background-image: url(../../assets/menu_2.jpg);
+  background-image: url(./../../../assets/menu_2.jpg);
 }
 .restaurants .cards_image-3 {
-  background-image: url(../../assets/menu_3.jpg);
+  background-image: url(./../../../assets/menu_3.jpg);
 }
 .restaurants .cards_image-4 {
-  background-image: url(../../assets/menu_4.jpg);
+  background-image: url(./../../../assets/menu_4.jpg);
 }
 .restaurants .cards_description {
   position: relative;
@@ -502,7 +502,7 @@ body {
   place-items: center;
   background: white;
   color: #99e2d0;
-  aspect-ratio: 1;
+  aspect-ratio: 1/1;
   width: 32px;
   border-radius: 50%;
 }
